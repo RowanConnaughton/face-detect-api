@@ -1,4 +1,4 @@
-# Express Server
+# Express Server for face detection app
 
 Express server for face detection app
 
@@ -10,4 +10,4 @@ knex is used to connect to a postgres database and bycrpt is used to hash passwo
 
 When you clone the repository run npm i to install dependencies and npm start to start the server.
 
-You will also need to set up a database.
+You will also need to set up a database and add a Clarifai API key to the image controller.
