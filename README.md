@@ -1,5 +1,7 @@
 # Express Server for face detection app
 
+View the app [here](https://face-detection-app-rc.herokuapp.com/)
+
 Express server for face detection app
 
 This server uses express knex and bycrpt
