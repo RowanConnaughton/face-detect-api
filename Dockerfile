@@ -1,6 +1,6 @@
 FROM node:10.15.3
 
-WORKDIR /usr/src/smart-brain-api
+WORKDIR /usr/src/face-detect-api
 
 COPY ./ ./
 

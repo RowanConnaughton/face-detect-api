@@ -1,13 +1,13 @@
-version: "3.7"
+version: "3.6"
 
 services:
-  smart-brain-api:
+  face-detect-api:
     container_name: backend
     build: ./
     command: npm start
-    working_dir: /usr/src/smart-brain-api
+    working_dir: /usr/src/face-detect-api
     environment:
-      POSTGRES_URI: postgres://rowan:secret@postgres:5432/smart-brain-docker
+      POSTGRES_URI: postgres://user:secret@postgres:5432/face-detect-docker
       REDIS_URI: redis://redis:6379
     links:
       - postgres
@@ -15,14 +15,14 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./:/usr/src/smart-brain-api
+      - ./:/usr/src/face-detect-api
 
   # Postgres
   postgres:
     environment:
-      POSTGRES_USER: rowan
+      POSTGRES_USER: user
       POSTGRES_PASSWORD: secret
-      POSTGRES_DB: smart-brain-docker
+      POSTGRES_DB: face-detect-docker
       POSTGRES_HOST: postgres
     build: ./postgres
     ports:
