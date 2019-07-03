@@ -24,6 +24,7 @@ Run docker-compose build to build the image.
 Then run docker-compose up to run the image.
 
 note.
+
 I am using docker toolbox for windows.
 This means that I am not able to take advantage of port forwarding.
 If you are using the full docker install the API should be reachable through localhost:3000.
